@@ -25,18 +25,5 @@ class ViewController: UIViewController {
     @IBAction func Brand(_ sender: UIButton) {
         marca.text = "Mercedes-Benz";
     }
-    
-    @IBOutlet weak var color: UILabel!
-    
-    @IBAction func Color(_ sender: Any) {
-        color.text = "Rojo";
-        color.textColor = UIColor.red;
-    }
-    
-    @IBOutlet weak var imagen: UIImageView!
-    
-    @IBAction func ShowHide(_ sender: UIButton) {
-        imagen.isHidden = !imagen.isHidden;
-    }
 }
 

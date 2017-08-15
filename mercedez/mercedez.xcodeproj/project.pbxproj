@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67E1B682F91995CAD31911D4 /* libPods-mercedez.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AA9E3083E44A546C1F10 /* libPods-mercedez.a */; };
+		BC640C431F4276BC003CF41F /* View3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC640C421F4276BC003CF41F /* View3Controller.swift */; };
 		BC9136AD1F422DE6003A4E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9136AC1F422DE6003A4E17 /* AppDelegate.swift */; };
 		BC9136AF1F422DE6003A4E17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9136AE1F422DE6003A4E17 /* ViewController.swift */; };
 		BC9136B21F422DE6003A4E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9136B01F422DE6003A4E17 /* Main.storyboard */; };
@@ -14,10 +16,14 @@
 		BC9136B71F422DE6003A4E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9136B51F422DE6003A4E17 /* LaunchScreen.storyboard */; };
 		BC9136BF1F423120003A4E17 /* mercedes_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9136BE1F423120003A4E17 /* mercedes_logo.png */; };
 		BC9136C11F423374003A4E17 /* mercedes-car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC9136C01F423374003A4E17 /* mercedes-car.jpg */; };
-		BC9136C91F423870003A4E17 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9136C81F423870003A4E17 /* View2Controller.swift */; };
+		BCF3A8141F42B4070098BCDC /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3A8131F42B4060098BCDC /* View2Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17620A020FF37F229EFC5E6C /* Pods-mercedez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mercedez.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mercedez/Pods-mercedez.debug.xcconfig"; sourceTree = "<group>"; };
+		4294AA9E3083E44A546C1F10 /* libPods-mercedez.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mercedez.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B7A027086B73A061FEB38A /* Pods-mercedez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mercedez.release.xcconfig"; path = "Pods/Target Support Files/Pods-mercedez/Pods-mercedez.release.xcconfig"; sourceTree = "<group>"; };
+		BC640C421F4276BC003CF41F /* View3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View3Controller.swift; sourceTree = "<group>"; };
 		BC9136A91F422DE6003A4E17 /* mercedez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mercedez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9136AC1F422DE6003A4E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9136AE1F422DE6003A4E17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +33,7 @@
 		BC9136B81F422DE6003A4E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9136BE1F423120003A4E17 /* mercedes_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mercedes_logo.png; path = ../../../../Downloads/mercedes_logo.png; sourceTree = "<group>"; };
 		BC9136C01F423374003A4E17 /* mercedes-car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mercedes-car.jpg"; path = "../../../../Downloads/mercedes-car.jpg"; sourceTree = "<group>"; };
-		BC9136C81F423870003A4E17 /* View2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View2Controller.swift; path = ../View2Controller.swift; sourceTree = "<group>"; };
+		BCF3A8131F42B4060098BCDC /* View2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E1B682F91995CAD31911D4 /* libPods-mercedez.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DF6B22621425A5B856AB3AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4294AA9E3083E44A546C1F10 /* libPods-mercedez.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78B04D1124BF7D24F8B2FA4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17620A020FF37F229EFC5E6C /* Pods-mercedez.debug.xcconfig */,
+				46B7A027086B73A061FEB38A /* Pods-mercedez.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC9136A01F422DE6003A4E17 = {
 			isa = PBXGroup;
 			children = (
 				BC9136AB1F422DE6003A4E17 /* mercedez */,
 				BC9136AA1F422DE6003A4E17 /* Products */,
+				78B04D1124BF7D24F8B2FA4D /* Pods */,
+				2DF6B22621425A5B856AB3AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +89,8 @@
 				BC9136C01F423374003A4E17 /* mercedes-car.jpg */,
 				BC9136AC1F422DE6003A4E17 /* AppDelegate.swift */,
 				BC9136AE1F422DE6003A4E17 /* ViewController.swift */,
-				BC9136C81F423870003A4E17 /* View2Controller.swift */,
+				BCF3A8131F42B4060098BCDC /* View2Controller.swift */,
+				BC640C421F4276BC003CF41F /* View3Controller.swift */,
 				BC9136B01F422DE6003A4E17 /* Main.storyboard */,
 				BC9136B31F422DE6003A4E17 /* Assets.xcassets */,
 				BC9136BE1F423120003A4E17 /* mercedes_logo.png */,
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC9136BB1F422DE6003A4E17 /* Build configuration list for PBXNativeTarget "mercedez" */;
 			buildPhases = (
+				769981D740ADA289F3B78132 /* [CP] Check Pods Manifest.lock */,
 				BC9136A51F422DE6003A4E17 /* Sources */,
 				BC9136A61F422DE6003A4E17 /* Frameworks */,
 				BC9136A71F422DE6003A4E17 /* Resources */,
+				E51E8AF8FD462B1F35CD2BE2 /* [CP] Embed Pods Frameworks */,
+				54956474E658BB73502F599D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,13 +172,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54956474E658BB73502F599D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mercedez/Pods-mercedez-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mercedez/Pods-mercedez-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769981D740ADA289F3B78132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mercedez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51E8AF8FD462B1F35CD2BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mercedez/Pods-mercedez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC9136A51F422DE6003A4E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BC9136AF1F422DE6003A4E17 /* ViewController.swift in Sources */,
-				BC9136C91F423870003A4E17 /* View2Controller.swift in Sources */,
+				BCF3A8141F42B4070098BCDC /* View2Controller.swift in Sources */,
+				BC640C431F4276BC003CF41F /* View3Controller.swift in Sources */,
 				BC9136AD1F422DE6003A4E17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +353,7 @@
 		};
 		BC9136BC1F422DE6003A4E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17620A020FF37F229EFC5E6C /* Pods-mercedez.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mercedez/Info.plist;
@@ -280,6 +366,7 @@
 		};
 		BC9136BD1F422DE6003A4E17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B7A027086B73A061FEB38A /* Pods-mercedez.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mercedez/Info.plist;
@@ -309,6 +396,7 @@
 				BC9136BD1F422DE6003A4E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

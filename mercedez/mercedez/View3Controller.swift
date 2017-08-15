@@ -1,5 +1,5 @@
 //
-//  View2Controller.swift
+//  View3Controller.swift
 //  mercedez
 //
 //  Created by abe sanchez on 8/14/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class View2Controller: UIViewController {
+class View3Controller: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +31,9 @@ class View2Controller: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBOutlet weak var imagen: UIImageView!
+    
+    @IBAction func Img(_ sender: UIButton) {
+        imagen.isHidden = !imagen.isHidden;
+    }
 }
