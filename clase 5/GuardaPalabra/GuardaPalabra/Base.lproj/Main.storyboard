@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PyZ-3w-fFi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Caliente-->
+        <scene sceneID="1uZ-vO-2Ke">
+            <objects>
+                <viewController id="Rvh-ON-ybc" customClass="ViewController" customModule="GuardaPalabra" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B0d-GN-yZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="WiE-8m-aKZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ea1-2R-zbm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guarda palabras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQO-oR-HUI">
+                                <rect key="frame" x="77" y="312" width="221" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Caliente" prompt="Hotel" id="wBu-rE-eMn">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="66h-PE-mLH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="7Jc-NO-t7b">
+                            <connections>
+                                <segue destination="B6g-r1-CP8" kind="show" id="YXF-iV-Xok"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMq-fe-etF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="106.59670164917542"/>
+        </scene>
+        <!--Table View1 Controller-->
+        <scene sceneID="ZYY-KO-7Np">
+            <objects>
+                <tableViewController id="B6g-r1-CP8" customClass="TableView1Controller" customModule="GuardaPalabra" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uVk-d6-XMN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="OY7-hb-Yko">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OY7-hb-Yko" id="nQn-39-y8l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="B6g-r1-CP8" id="iVp-l4-QsT"/>
+                            <outlet property="delegate" destination="B6g-r1-CP8" id="HyP-3b-DGS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ZXs-mA-N1v">
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="mDn-aU-CI9">
+                            <connections>
+                                <action selector="saveWord:" destination="B6g-r1-CP8" id="ixc-QG-8gm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7m-1o-ps6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zw5-41-wcQ">
+            <objects>
+                <navigationController id="PyZ-3w-fFi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mUL-54-zh6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rvh-ON-ybc" kind="relationship" relationship="rootViewController" id="fP0-Bl-QaD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jph-85-yW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="107"/>
+        </scene>
+    </scenes>
+</document>
